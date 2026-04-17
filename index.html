@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My First Page</title>
-  <!-- Downloaded Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: Simple one web page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- TITLE -->
-  <h1 class="main-title">Hei to visiting to my first page</h1>
-  <p class="subtitle">Some intro or introduction</p>
-
-  <!-- 3 PICTURES WITH HOVER TEXT -->
-  <div class="pictures-row">
-
-    <div class="pic-box">
-      <img src="minion1.png" alt="Minion 1"/>
-      <span class="hover-text">My boss Allan</span>
+    <div class="title">
+        <h1>Hei to visiting to my first page</h1>
+        <p>Some person to introduction</p>
     </div>
 
-    <div class="pic-box">
-      <img src="minion2.png" alt="Minion 2"/>
-      <span class="hover-text">My friend Stuart</span>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="image-container">
+                <img src="minion1.png" alt="Minion 1">
+                <div class="hover-text">My boss Allan.</div>
+            </div>
+            <p>Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="image-container">
+                <img src="minion2.png" alt="Minion 2">
+                <div class="hover-text">Banana lover!</div>
+            </div>
+            <p>Photos and videos help you keep your document compact, yet still visually interesting. To add a photo or video to your document, click the Insert tab and then choose from the options in the Illustrations group.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="image-container">
+                <img src="minion3.png" alt="Minion 3">
+                <div class="hover-text">Despicable me!</div>
+            </div>
+            <p>Reading is a key skill in the new Reading view. You can collapse parts of the document and focus on the text you need. If you need to stop reading before you reach the end, Word remembers where you left off – even on another device.</p>
+        </div>
     </div>
 
-    <div class="pic-box">
-      <img src="minion3.png" alt="Minion 3"/>
-      <span class="hover-text">My buddy Kevin</span>
+    <div class="list-container">
+        <h2>Aspects that I try to keep in mind</h2>
+        <p class="list-instruction">If you want to see first (1), put mouse over it</p>
+        <ol class="custom-list">
+            <li><span class="list-text">Present nature</span></li>
+            <li>Respect nature</li>
+            <li>Learning new things</li>
+        </ol>
     </div>
 
-  </div>
-
-  <!-- 3 TEXT BOXES IN A ROW -->
-  <div class="textboxes-row">
-
-    <div class="text-box">
-      <p>Vibe generates a powerful way to live your best life. You can write anything you want here about yourself or anything interesting.</p>
-    </div>
-
-    <div class="text-box">
-      <p>Passion and skills help you discover what you love to do. Fill this box with your thoughts, dreams or anything you enjoy.</p>
-    </div>
-
-    <div class="text-box">
-      <p>Learning is never-ending. In this text box you can share what you are currently studying or what excites you about the future.</p>
-    </div>
-
-  </div>
-
-  <!-- LIST - invisible, shows on hover -->
-  <div class="list-section">
-    <h2 class="list-title">Aspects that I try to keep in mind</h2>
-    <ul class="hover-list">
-      <li><span>If you want to see first (1), pull mouse over it</span></li>
-      <li><span>Avoiding worrying about unnecessary things</span></li>
-      <li><span>Respect nature</span></li>
-      <li><span>Learning new things</span></li>
-    </ul>
-  </div>
-
-  <!-- SIGNATURE - bottom right, always visible -->
-  <div class="signature">
-    &copy; MrPitt007
-  </div>
-
+    <div class="signature">© Time</div>
 </body>
 </html>
