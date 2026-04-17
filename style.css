@@ -1,0 +1,143 @@
+/* ====================== GENERAL ====================== */
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ====================== TITLE ====================== */
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.title h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+.title p {
+    font-size: 1.3rem;
+    margin: 10px 0 0;
+}
+
+/* ====================== 3 CARDS HORIZONTAL ====================== */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 320px;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #2a2a2a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Image + hover text at BOTTOM (exactly like school task) */
+.image-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+.image-container img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.hover-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffeb3b;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+.card:hover .hover-text {
+    opacity: 1;
+}
+
+/* Text under image */
+.card p {
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* ====================== LIST ====================== */
+.list-container {
+    max-width: 620px;
+    margin: 0 auto;
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+.list-instruction {
+    font-size: 1.1rem;
+    margin: 10px 0 20px;
+    color: #aaa;
+}
+
+.custom-list {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0;
+}
+.custom-list li {
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+    list-style-position: inside;
+}
+.custom-list li::marker {
+    color: #ffffff;
+}
+.custom-list li:hover::marker {
+    color: #ff0000;
+}
+.list-text {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.custom-list li:hover .list-text {
+    opacity: 1;
+}
+
+/* ====================== SIGNATURE (fixed bottom right) ====================== */
+.signature {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
